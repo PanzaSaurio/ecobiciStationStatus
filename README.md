@@ -17,9 +17,9 @@ La estructura de la tabla para guardar estos datos se encuentra en el archivo `e
 
 
 2. **Navega al directorio del proyecto**:
-  cd ecobiciStationStatus
-
-
+   ```
+    cd ecobiciStationStatus
+   
 ## Dependencias
 
 Este proyecto utiliza las siguientes librerías:
@@ -32,15 +32,17 @@ Este proyecto utiliza las siguientes librerías:
 ### Instrucciones de instalación:
 
   Para instalar estas bibliotecas, abre la terminal o línea de comandos y ejecuta los siguientes comandos:
-    pip install requests
-    pip install pandas
+    
+     pip install requests
+     pip install pandas
 
 ## Uso
 
 1. Ejecuta el script:
-  python ecobiciStationStatus.py
+   ```
+   python ecobiciStationStatus.py
 
-2. Los datos se almacenarán en la base de datos Redshift configurada.
+3. Los datos se almacenarán en la base de datos Redshift configurada.
 
 ## Información Adicional
 
