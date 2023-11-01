@@ -3,7 +3,6 @@ import pandas as pd
 import requests
 
 def unix_to_readable(unix_timestamp):
-    """Convertir timestamp unix a formato legible."""
     return pd.to_datetime(unix_timestamp, unit='s').strftime('%Y-%m-%d %H:%M:%S')
 
 with open('credentials.json', 'r') as file:
