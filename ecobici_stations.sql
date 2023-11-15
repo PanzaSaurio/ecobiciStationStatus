@@ -1,5 +1,6 @@
 CREATE TABLE ecobici_stations (
-    station_id INT PRIMARY KEY,
+    ecobici_stations_id INT IDENTITY(1,1),
+    station_id INT,
     num_bikes_available INT,
     num_mechanical_bikes_available INT,
     num_ebikes_available INT,
@@ -12,7 +13,9 @@ CREATE TABLE ecobici_stations (
     is_installed BOOLEAN,
     is_renting BOOLEAN,
     is_returning BOOLEAN,
-    traffic INT
+    traffic INT,
+    PRIMARY KEY (ecobici_stations_id),
+    UNIQUE (station_id, last_reported)
 )
 DISTKEY (station_id)
 SORTKEY (last_reported);
