@@ -35,6 +35,8 @@ Este proyecto utiliza las siguientes librerías:
     
      pip install requests
      pip install pandas
+     pip install requests
+     pip install psycopg2
 
 ## Uso
 
